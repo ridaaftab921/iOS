@@ -4,10 +4,6 @@ import UIKit
 class AppCoordinator: BaseCoordinator {
     var window = UIWindow(frame: UIScreen.main.bounds)
     
-//    init(window: UIWindow) {
-//        self.window = window
-//    }
-    
     override func start() {
         window.makeKeyAndVisible()
         showSignIn()

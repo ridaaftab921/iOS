@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="ns7-7i-tEU">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9w1-g3-zT9" customClass="SignUpViewController" customModule="AdviseDSS_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="foP-wm-H7l">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u7X-7m-aOh">
+                                <rect key="frame" x="0.0" y="447.33333333333326" width="393" height="404.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92j-Rg-W9H">
+                                        <rect key="frame" x="165" y="20" width="63" height="20.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nQN-cV-nw2" customClass="LocalizedTextField" customModule="AdviseDSS_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="52.666666666666686" width="345" height="40"/>
+                                        <color key="backgroundColor" red="0.46666666670000001" green="0.56470588239999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="0.98999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="emailTextField"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="uDf-kf-mkV"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderLocalizationKey" value="Name"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile/Whatsapp No." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZVb-XX-ZRG" customClass="LocalizedTextField" customModule="AdviseDSS_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="104.66666666666669" width="345" height="40"/>
+                                        <color key="backgroundColor" red="0.46666666670000001" green="0.56470588239999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="0.98999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="emailTextField"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="G3k-UY-fqM"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderLocalizationKey" value="Mobile/Whatsapp No."/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sbC-C3-hhX" customClass="LocalizedTextField" customModule="AdviseDSS_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="156.66666666666669" width="345" height="40"/>
+                                        <color key="backgroundColor" red="0.46666666670000001" green="0.56470588239999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="0.98999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="emailTextField"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="wLR-HG-fWz"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderLocalizationKey" value="Email "/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sky-JC-rro">
+                                        <rect key="frame" x="100" y="312.66666666666669" width="193" height="44"/>
+                                        <color key="backgroundColor" red="0.46666666670000001" green="0.56470588239999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="7Rh-ex-Saz"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Register">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="District" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dr5-KQ-6f9" customClass="LocalizedTextField" customModule="AdviseDSS_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="208.66666666666669" width="345" height="40"/>
+                                        <color key="backgroundColor" red="0.46666666670000001" green="0.56470588239999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="0.98999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="emailTextField"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ptu-tK-hTR"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderLocalizationKey" value="District"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZVe-0o-uzm" customClass="LocalizedTextField" customModule="AdviseDSS_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="260.66666666666669" width="345" height="40"/>
+                                        <color key="backgroundColor" red="0.46666666670000001" green="0.56470588239999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="passwordTextField"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="m46-Oe-9KS"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholderLocalizationKey" value="Password"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Dr5-KQ-6f9" firstAttribute="leading" secondItem="u7X-7m-aOh" secondAttribute="leading" constant="24" id="3rh-lL-05K"/>
+                                    <constraint firstItem="sbC-C3-hhX" firstAttribute="centerX" secondItem="u7X-7m-aOh" secondAttribute="centerX" id="B49-UL-wDz"/>
+                                    <constraint firstItem="92j-Rg-W9H" firstAttribute="centerX" secondItem="u7X-7m-aOh" secondAttribute="centerX" id="FCp-vm-QlK"/>
+                                    <constraint firstItem="Dr5-KQ-6f9" firstAttribute="top" secondItem="sbC-C3-hhX" secondAttribute="bottom" constant="12" id="IpB-sr-aIy"/>
+                                    <constraint firstItem="ZVb-XX-ZRG" firstAttribute="leading" secondItem="u7X-7m-aOh" secondAttribute="leading" constant="24" id="JO6-sf-1fG"/>
+                                    <constraint firstItem="sky-JC-rro" firstAttribute="top" secondItem="ZVe-0o-uzm" secondAttribute="bottom" constant="12" id="Qkg-hL-EQe"/>
+                                    <constraint firstItem="sky-JC-rro" firstAttribute="centerX" secondItem="u7X-7m-aOh" secondAttribute="centerX" id="TE1-bK-j5P"/>
+                                    <constraint firstItem="nQN-cV-nw2" firstAttribute="leading" secondItem="u7X-7m-aOh" secondAttribute="leading" constant="24" id="TgF-ot-Ux1"/>
+                                    <constraint firstItem="ZVb-XX-ZRG" firstAttribute="centerX" secondItem="u7X-7m-aOh" secondAttribute="centerX" id="WKF-Du-eQd"/>
+                                    <constraint firstItem="ZVe-0o-uzm" firstAttribute="centerX" secondItem="u7X-7m-aOh" secondAttribute="centerX" id="YhZ-2y-J3h"/>
+                                    <constraint firstItem="nQN-cV-nw2" firstAttribute="centerX" secondItem="u7X-7m-aOh" secondAttribute="centerX" id="ZHR-R9-Pa0"/>
+                                    <constraint firstItem="Dr5-KQ-6f9" firstAttribute="centerX" secondItem="u7X-7m-aOh" secondAttribute="centerX" id="c0u-BW-9Nk"/>
+                                    <constraint firstItem="nQN-cV-nw2" firstAttribute="top" secondItem="92j-Rg-W9H" secondAttribute="bottom" constant="12" id="c8q-nK-q9m"/>
+                                    <constraint firstItem="sbC-C3-hhX" firstAttribute="leading" secondItem="u7X-7m-aOh" secondAttribute="leading" constant="24" id="d8a-aL-RWV"/>
+                                    <constraint firstAttribute="bottom" secondItem="sky-JC-rro" secondAttribute="bottom" constant="48" id="fkY-D8-f2y"/>
+                                    <constraint firstItem="92j-Rg-W9H" firstAttribute="top" secondItem="u7X-7m-aOh" secondAttribute="top" constant="20" id="g5b-u1-pTv"/>
+                                    <constraint firstItem="ZVe-0o-uzm" firstAttribute="leading" secondItem="u7X-7m-aOh" secondAttribute="leading" constant="24" id="gPo-cj-OkS"/>
+                                    <constraint firstItem="sbC-C3-hhX" firstAttribute="top" secondItem="ZVb-XX-ZRG" secondAttribute="bottom" constant="12" id="nff-Ik-mBz"/>
+                                    <constraint firstItem="sky-JC-rro" firstAttribute="leading" secondItem="u7X-7m-aOh" secondAttribute="leading" constant="100" id="o3P-ZE-VXe"/>
+                                    <constraint firstItem="ZVb-XX-ZRG" firstAttribute="top" secondItem="nQN-cV-nw2" secondAttribute="bottom" constant="12" id="p94-ST-5So"/>
+                                    <constraint firstItem="ZVe-0o-uzm" firstAttribute="top" secondItem="Dr5-KQ-6f9" secondAttribute="bottom" constant="12" id="r1u-Fb-96U"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9t3-vZ-T87"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="loginView"/>
+                        <constraints>
+                            <constraint firstItem="u7X-7m-aOh" firstAttribute="leading" secondItem="9t3-vZ-T87" secondAttribute="leading" id="OKY-Es-aGn"/>
+                            <constraint firstAttribute="bottom" secondItem="u7X-7m-aOh" secondAttribute="bottom" id="ePs-a8-Ert"/>
+                            <constraint firstItem="9t3-vZ-T87" firstAttribute="trailing" secondItem="u7X-7m-aOh" secondAttribute="trailing" id="gbW-l7-uA0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="ZVe-0o-uzm" id="c9I-gr-Drc"/>
+                        <outlet property="usernameTextField" destination="nQN-cV-nw2" id="TSx-bD-5uT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qlV-mH-7ue" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,11 +1,16 @@
 import UIKit
 
+protocol SignInViewControllerDelegate: AnyObject {
+    func showSignup()
+}
+
+
 class SignInViewController: UIViewController, Storyboarded {
     static var storyboard = AppStoryboard.signIn
+    weak var delegate: SignInViewControllerDelegate?
 
     @IBOutlet weak var usernameTextField: LocalizedTextField!
     @IBOutlet weak var passwordTextField: LocalizedTextField!
-    @IBOutlet weak var signInButton: ButtonWithProgress!
 
     var viewModel: SignInViewModel?
     
@@ -16,5 +21,9 @@ class SignInViewController: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureDismissKeyboard()
+    }
+    
+    @IBAction func onRegisterTapped(_ sender: Any) {
+        delegate?.showSignup()
     }
 }
