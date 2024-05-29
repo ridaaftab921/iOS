@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (5.6.4)
+  - SwiftLint (0.55.1)
+  - Swinject (2.8.8)
+  - SwinjectAutoregistration (2.8.4):
+    - Swinject (~> 2.8.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - SwiftLint
+  - Swinject
+  - SwinjectAutoregistration
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SwiftLint
+    - Swinject
+    - SwinjectAutoregistration
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  SwiftLint: 3fe909719babe5537c552ee8181c0031392be933
+  Swinject: 2943463cdd58b49f114213bf1ce4a09f374828e7
+  SwinjectAutoregistration: ae6a92b4f483f62cdba93dc079ae6e9d3493f3e6
+
+PODFILE CHECKSUM: 9e15b4697ac03388b05cddb64bf0526da60ff466
+
+COCOAPODS: 1.11.3

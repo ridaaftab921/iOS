@@ -1,0 +1,6 @@
+framework module Pods_AdviseDSS_iOS_AdviseDSS_iOSUITests {
+  umbrella header "Pods-AdviseDSS-iOS-AdviseDSS-iOSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
