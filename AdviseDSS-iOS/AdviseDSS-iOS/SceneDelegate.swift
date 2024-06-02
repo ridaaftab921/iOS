@@ -22,18 +22,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         Container.loggingFunction = nil
         AppDelegate.container.registerDependencies()
         
-        setUpSideMenu()
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene
         
         appCoordinator = AppDelegate.container.resolve(AppCoordinator.self)!
         appCoordinator.window = window!
         appCoordinator.start()
-    }
-    
-    private func setUpSideMenu() {
-        // Define the menus
-        
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {

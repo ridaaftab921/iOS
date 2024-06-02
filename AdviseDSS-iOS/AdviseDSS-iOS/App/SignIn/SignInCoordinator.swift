@@ -20,6 +20,7 @@ class SignInCoordinator: BaseCoordinator {
 extension SignInCoordinator: SignInViewControllerDelegate {
     func showSignup() {
         let coordinator = AppDelegate.container.resolve(SignUpCoordinator.self)!
+        coordinator.navigationController = self.navigationController
         start(coordinator: coordinator)
 
     }

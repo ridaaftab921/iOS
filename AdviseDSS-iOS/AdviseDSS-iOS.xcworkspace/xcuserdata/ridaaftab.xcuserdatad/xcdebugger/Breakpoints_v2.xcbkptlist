@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "20C20FE1-B525-405F-B8A5-27E8D1CD6D35"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AdviseDSS-iOS/App/SignIn/SignInCoordinator.swift"
@@ -17,7 +17,7 @@
             startingLineNumber = "22"
             endingLineNumber = "22"
             landmarkName = "showSignup()"
-            landmarkType = "9">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

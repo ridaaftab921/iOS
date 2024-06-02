@@ -18,7 +18,7 @@ class SignUpCoordinator: BaseCoordinator {
         let viewController = SignUpViewController.instantiate()
         viewController.viewModel = viewModel
         DispatchQueue.main.async {
-            self.navigationController.pushViewController(viewController, animated: true)
+            self.navigationController.pushViewController(viewController, animated: false)
         }
     }
 }
