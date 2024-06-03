@@ -10,6 +10,11 @@
 		542A08E0672B09714DAEE46D /* Pods_AdviseDSS_iOS_AdviseDSS_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4EB8E6BD295C4FBE3DF4B8 /* Pods_AdviseDSS_iOS_AdviseDSS_iOSUITests.framework */; };
 		5C3D48717FE79B1918333B05 /* Pods_AdviseDSS_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5231AB85914D6FBC847703AF /* Pods_AdviseDSS_iOS.framework */; };
 		CF9728070285DFE82C568949 /* Pods_AdviseDSS_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237A55A3530F48B5868BB7FF /* Pods_AdviseDSS_iOSTests.framework */; };
+		D300AFAF2C0E69650058C945 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D300AFAE2C0E69650058C945 /* Main.storyboard */; };
+		D300AFB12C0E697B0058C945 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300AFB02C0E697B0058C945 /* MainTabBarViewController.swift */; };
+		D300AFB32C0E69A00058C945 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300AFB22C0E69A00058C945 /* MainCoordinator.swift */; };
+		D300AFB62C0E71200058C945 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D300AFB52C0E71200058C945 /* Map.storyboard */; };
+		D300AFB82C0E71300058C945 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300AFB72C0E71300058C945 /* MapViewController.swift */; };
 		D319C78F2C00FB5B00581E81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D319C78E2C00FB5B00581E81 /* AppDelegate.swift */; };
 		D319C7912C00FB5B00581E81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D319C7902C00FB5B00581E81 /* SceneDelegate.swift */; };
 		D319C7932C00FB5B00581E81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D319C7922C00FB5B00581E81 /* ViewController.swift */; };
@@ -80,6 +85,11 @@
 		AD4EB8E6BD295C4FBE3DF4B8 /* Pods_AdviseDSS_iOS_AdviseDSS_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdviseDSS_iOS_AdviseDSS_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C289BDCBCB42790EC5854DF2 /* Pods-AdviseDSS-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdviseDSS-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-AdviseDSS-iOSTests/Pods-AdviseDSS-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C67EB29F841726111B8B6754 /* Pods-AdviseDSS-iOS-AdviseDSS-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdviseDSS-iOS-AdviseDSS-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-AdviseDSS-iOS-AdviseDSS-iOSUITests/Pods-AdviseDSS-iOS-AdviseDSS-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D300AFAE2C0E69650058C945 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D300AFB02C0E697B0058C945 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		D300AFB22C0E69A00058C945 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		D300AFB52C0E71200058C945 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		D300AFB72C0E71300058C945 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D319C78B2C00FB5B00581E81 /* AdviseDSS-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AdviseDSS-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D319C78E2C00FB5B00581E81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D319C7902C00FB5B00581E81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +186,25 @@
 				54F0BDCC908B2C158DE73222 /* Pods-AdviseDSS-iOSTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D300AFAD2C0E69560058C945 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D300AFAE2C0E69650058C945 /* Main.storyboard */,
+				D300AFB02C0E697B0058C945 /* MainTabBarViewController.swift */,
+				D300AFB22C0E69A00058C945 /* MainCoordinator.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D300AFB42C0E71120058C945 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D300AFB52C0E71200058C945 /* Map.storyboard */,
+				D300AFB72C0E71300058C945 /* MapViewController.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		D319C7822C00FB5B00581E81 = {
@@ -317,6 +346,8 @@
 		D3C127542C00FCFE00E00D88 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				D300AFB42C0E71120058C945 /* Map */,
+				D300AFAD2C0E69560058C945 /* Main */,
 				D340F3D22C07D0E400D88476 /* SignUp */,
 				D31F6DED2C0101A80084FDE3 /* AppCoordinator.swift */,
 				D31F6DF82C0101A80084FDE3 /* Base */,
@@ -502,8 +533,10 @@
 			files = (
 				D31F6E002C0101A80084FDE3 /* SignIn.storyboard in Resources */,
 				D319C79B2C00FB5C00581E81 /* LaunchScreen.storyboard in Resources */,
+				D300AFAF2C0E69650058C945 /* Main.storyboard in Resources */,
 				D340F3D42C07D17700D88476 /* SignUp.storyboard in Resources */,
 				D319C7982C00FB5C00581E81 /* Assets.xcassets in Resources */,
+				D300AFB62C0E71200058C945 /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,7 +673,9 @@
 				D31F6E0A2C0101A80084FDE3 /* AppCoordinator.swift in Sources */,
 				D31F6DDA2C0100850084FDE3 /* Container+ViewModels.swift in Sources */,
 				D31F6E132C0101A80084FDE3 /* ViewControllerWithSideMenu.swift in Sources */,
+				D300AFB32C0E69A00058C945 /* MainCoordinator.swift in Sources */,
 				D319C7932C00FB5B00581E81 /* ViewController.swift in Sources */,
+				D300AFB12C0E697B0058C945 /* MainTabBarViewController.swift in Sources */,
 				D340F3D62C07D19800D88476 /* SignUpViewController.swift in Sources */,
 				D31F6DD82C0100850084FDE3 /* Container+RegisterDependencies.swift in Sources */,
 				D31F6E3D2C0102810084FDE3 /* FancyButton.swift in Sources */,
@@ -656,6 +691,7 @@
 				D31F6E3E2C0102810084FDE3 /* ButtonWithProgress.swift in Sources */,
 				D31F6E032C0101A80084FDE3 /* SignInViewController.swift in Sources */,
 				D31F6DC22C0100370084FDE3 /* Credentials.swift in Sources */,
+				D300AFB82C0E71300058C945 /* MapViewController.swift in Sources */,
 				D31F6DD32C0100650084FDE3 /* UIViewControllerExtensions.swift in Sources */,
 				D340F3DA2C07D1D700D88476 /* SignUpCoordinator.swift in Sources */,
 				D31F6DCE2C0100650084FDE3 /* String+Localization.swift in Sources */,

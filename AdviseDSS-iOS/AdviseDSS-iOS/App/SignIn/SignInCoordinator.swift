@@ -24,4 +24,11 @@ extension SignInCoordinator: SignInViewControllerDelegate {
         start(coordinator: coordinator)
 
     }
+    
+    func successfulLogin() {
+        let coordinator = AppDelegate.container.resolve(MainCoordinator.self)!
+        coordinator.navigationController = self.navigationController
+        start(coordinator: coordinator)
+    }
+
 }
