@@ -10,6 +10,7 @@ target 'AdviseDSS-iOS' do
   pod 'SwinjectAutoregistration'
   pod 'SwiftLint'
   pod 'Alamofire'
+  pod 'GoogleMaps'
 
   target 'AdviseDSS-iOSTests' do
     inherit! :search_paths

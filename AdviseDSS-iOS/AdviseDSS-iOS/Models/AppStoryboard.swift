@@ -5,4 +5,5 @@ enum AppStoryboard: String {
     case signUp = "SignUp"
     case main = "Main"
     case map = "Map"
+    case feedback = "Feedback"
 }

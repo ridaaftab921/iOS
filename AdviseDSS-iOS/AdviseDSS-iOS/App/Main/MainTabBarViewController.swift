@@ -25,16 +25,21 @@ class MainTabBarViewController: UITabBarController, Storyboarded {
     
     private func updateTabBarAppearance(items: [TabItem]) {
         let tabBarAppearance: UITabBarAppearance = UITabBarAppearance()
-        tabBarAppearance.configureWithOpaqueBackground()
+        tabBarAppearance.configureWithDefaultBackground()
         
         tabBarAppearance.backgroundColor = #colorLiteral(red: 0.5379658341, green: 0.6279124022, blue: 0.5405266285, alpha: 1)
         tabBarAppearance.backgroundImage = UIImage(named: "white_b")
-        
         updateTabBarItemAppearance(appearance: tabBarAppearance.compactInlineLayoutAppearance)
         updateTabBarItemAppearance(appearance: tabBarAppearance.inlineLayoutAppearance)
         updateTabBarItemAppearance(appearance: tabBarAppearance.stackedLayoutAppearance)
         
-        self.tabBar.standardAppearance = tabBarAppearance        
+        self.tabBar.standardAppearance = tabBarAppearance
+        if #available(iOS 15.0, *) {
+            self.tabBar.scrollEdgeAppearance = tabBarAppearance
+        } else {
+            // Fallback on earlier versions
+        }
+        
         addItems(items: items)
     }
     

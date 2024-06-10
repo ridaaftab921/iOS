@@ -48,6 +48,9 @@
 		D31F6E402C0102810084FDE3 /* LocalizedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31F6E3B2C0102810084FDE3 /* LocalizedLabel.swift */; };
 		D31F6E412C0102810084FDE3 /* LocalizedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31F6E3C2C0102810084FDE3 /* LocalizedButton.swift */; };
 		D31F6E432C0102C80084FDE3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31F6E422C0102C80084FDE3 /* Constants.swift */; };
+		D32C23E52C14855C00A93316 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32C23E42C14855C00A93316 /* DataStore.swift */; };
+		D32C23E82C1670E400A93316 /* Feedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32C23E72C1670E300A93316 /* Feedback.storyboard */; };
+		D32C23EA2C1670F200A93316 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32C23E92C1670F200A93316 /* FeedbackViewController.swift */; };
 		D340F3D42C07D17700D88476 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D340F3D32C07D17700D88476 /* SignUp.storyboard */; };
 		D340F3D62C07D19800D88476 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D340F3D52C07D19800D88476 /* SignUpViewController.swift */; };
 		D340F3D82C07D1AC00D88476 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D340F3D72C07D1AC00D88476 /* SignUpViewModel.swift */; };
@@ -127,6 +130,9 @@
 		D31F6E3B2C0102810084FDE3 /* LocalizedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedLabel.swift; sourceTree = "<group>"; };
 		D31F6E3C2C0102810084FDE3 /* LocalizedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedButton.swift; sourceTree = "<group>"; };
 		D31F6E422C0102C80084FDE3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D32C23E42C14855C00A93316 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		D32C23E72C1670E300A93316 /* Feedback.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feedback.storyboard; sourceTree = "<group>"; };
+		D32C23E92C1670F200A93316 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		D340F3D32C07D17700D88476 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		D340F3D52C07D19800D88476 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D340F3D72C07D1AC00D88476 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
@@ -332,6 +338,15 @@
 			path = Controls;
 			sourceTree = "<group>";
 		};
+		D32C23E62C1670D100A93316 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				D32C23E72C1670E300A93316 /* Feedback.storyboard */,
+				D32C23E92C1670F200A93316 /* FeedbackViewController.swift */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
 		D340F3D22C07D0E400D88476 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +361,7 @@
 		D3C127542C00FCFE00E00D88 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				D32C23E62C1670D100A93316 /* Feedback */,
 				D300AFB42C0E71120058C945 /* Map */,
 				D300AFAD2C0E69560058C945 /* Main */,
 				D340F3D22C07D0E400D88476 /* SignUp */,
@@ -393,6 +409,7 @@
 				D31F6E212C0101CD0084FDE3 /* DTO */,
 				D31F6E1B2C0101CD0084FDE3 /* Models */,
 				D3A559842C07404D00C58C42 /* NetworkManager.swift */,
+				D32C23E42C14855C00A93316 /* DataStore.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -434,6 +451,7 @@
 				D319C7882C00FB5B00581E81 /* Frameworks */,
 				D319C7892C00FB5B00581E81 /* Resources */,
 				682029BBD65EEFBDBFA0E1D7 /* [CP] Embed Pods Frameworks */,
+				C49A13E918BC333D99C09B45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -472,6 +490,7 @@
 				D319C7A82C00FB5C00581E81 /* Frameworks */,
 				D319C7A92C00FB5C00581E81 /* Resources */,
 				7EF763F3A4F8541E3A4162FF /* [CP] Embed Pods Frameworks */,
+				3F6F87DEDA9C8D0E57A5AD72 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -532,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D31F6E002C0101A80084FDE3 /* SignIn.storyboard in Resources */,
+				D32C23E82C1670E400A93316 /* Feedback.storyboard in Resources */,
 				D319C79B2C00FB5C00581E81 /* LaunchScreen.storyboard in Resources */,
 				D300AFAF2C0E69650058C945 /* Main.storyboard in Resources */,
 				D340F3D42C07D17700D88476 /* SignUp.storyboard in Resources */,
@@ -601,6 +621,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3F6F87DEDA9C8D0E57A5AD72 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdviseDSS-iOS-AdviseDSS-iOSUITests/Pods-AdviseDSS-iOS-AdviseDSS-iOSUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdviseDSS-iOS-AdviseDSS-iOSUITests/Pods-AdviseDSS-iOS-AdviseDSS-iOSUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdviseDSS-iOS-AdviseDSS-iOSUITests/Pods-AdviseDSS-iOS-AdviseDSS-iOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4B56BA7BBC40BA744BFBC120 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -657,6 +694,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdviseDSS-iOS-AdviseDSS-iOSUITests/Pods-AdviseDSS-iOS-AdviseDSS-iOSUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C49A13E918BC333D99C09B45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdviseDSS-iOS/Pods-AdviseDSS-iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdviseDSS-iOS/Pods-AdviseDSS-iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdviseDSS-iOS/Pods-AdviseDSS-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -674,6 +728,7 @@
 				D31F6DDA2C0100850084FDE3 /* Container+ViewModels.swift in Sources */,
 				D31F6E132C0101A80084FDE3 /* ViewControllerWithSideMenu.swift in Sources */,
 				D300AFB32C0E69A00058C945 /* MainCoordinator.swift in Sources */,
+				D32C23EA2C1670F200A93316 /* FeedbackViewController.swift in Sources */,
 				D319C7932C00FB5B00581E81 /* ViewController.swift in Sources */,
 				D300AFB12C0E697B0058C945 /* MainTabBarViewController.swift in Sources */,
 				D340F3D62C07D19800D88476 /* SignUpViewController.swift in Sources */,
@@ -683,6 +738,7 @@
 				D31F6E152C0101A80084FDE3 /* BaseCoordinator.swift in Sources */,
 				D31F6E012C0101A80084FDE3 /* SignInCoordinator.swift in Sources */,
 				D31F6E432C0102C80084FDE3 /* Constants.swift in Sources */,
+				D32C23E52C14855C00A93316 /* DataStore.swift in Sources */,
 				D3A559872C0740CA00C58C42 /* DataResponseModel.swift in Sources */,
 				D31F6E022C0101A80084FDE3 /* SignInViewModel.swift in Sources */,
 				D319C78F2C00FB5B00581E81 /* AppDelegate.swift in Sources */,

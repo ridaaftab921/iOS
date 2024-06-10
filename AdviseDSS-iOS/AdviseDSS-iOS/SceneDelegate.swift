@@ -7,6 +7,7 @@
 
 import UIKit
 import Swinject
+import GoogleMaps
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -21,6 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         Container.loggingFunction = nil
         AppDelegate.container.registerDependencies()
+        GMSServices.provideAPIKey("AIzaSyAKUYmrJGg0Qw_6ZfNM-K6kh2HjXnLHcb0")
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene

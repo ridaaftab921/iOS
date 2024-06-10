@@ -27,7 +27,13 @@ extension MainCoordinator: TabBarProtocol {
     
     func getViewController(forItem tabItem: TabItem) -> UIViewController {
         var vc: UIViewController!
-        vc = MapViewController.instantiate()
+        
+        switch tabItem {
+        case .observed:
+            vc = MapViewController.instantiate()
+        case .feedback, .advisory, .forecast:
+            vc = FeedbackViewController.instantiate()
+        }
         
         vc.tabBarItem = tabItem.tabBarItem
         return vc
